@@ -3,9 +3,11 @@ import random
 class RockScissorspaper:
     def __init__(self):
         self.choices = ['rock', 'scissors', 'paper']
-            def computer_choice(self):
+
+    def computer_choice(self):
         return random.choice(self.choices)
-            def determine_winner(self, player_choice, computer_choice):
+
+    def determine_winner(self, player_choice, computer_choice):
         if player_choice == computer_choice:
             return "tie"
         elif (player_choice == 'rock' and computer_choice == 'scissors') or \
@@ -14,7 +16,8 @@ class RockScissorspaper:
             return "player"
         else:
             return "computer"
-            def main():
+
+def main():
     game = RockScissorspaper()
     print("Welcome to Rock-Scissors-Paper!")
 
@@ -41,5 +44,3 @@ class RockScissorspaper:
 
 if __name__ == "__main__":
     main()
-
-
